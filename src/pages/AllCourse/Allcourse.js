@@ -8,7 +8,7 @@ const Allcourse = () => {
   const [courses,setCourses] = useState([]);
   useEffect(() => {
     const fetchCourses = async ()=>{
-      const res = await axios.get("/course")
+      const res = await axios.get("https://learnplus.herokuapp.com/api/course")
       setCourses(res.data)
     }
     fetchCourses()

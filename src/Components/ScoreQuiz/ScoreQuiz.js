@@ -34,7 +34,7 @@ const ScoreQuiz = (props) => {
              }
        
           try{
-           const res = await axios.post("/result",newResult);
+           const res = await axios.post("https://learnplus.herokuapp.com/api/result",newResult);
            window.location.replace("/student/dashboard")
             console.log(res);
           }catch(err){

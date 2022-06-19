@@ -12,7 +12,7 @@ const[quiz,setQuiz] = useState(null)
 
     useEffect(() => {
         const fetchCourses = async ()=>{
-          const res = await axios.get("/quiz/allQuiz")
+          const res = await axios.get("https://learnplus.herokuapp.com/api/quiz/allQuiz")
           setDquiz([...res.data])
         }
         fetchCourses()

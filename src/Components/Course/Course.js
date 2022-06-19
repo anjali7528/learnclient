@@ -13,7 +13,7 @@ const Course = ({course}) => {
 
     const handleUpdate = async() =>{
         try{
-            await axios.put(`/course/${course._id}`,{
+            await axios.put(`https://learnplus.herokuapp.com/api/course/${course._id}`,{
               username: user.username,
                name,
           });
@@ -24,7 +24,7 @@ const Course = ({course}) => {
 
     const handleDelete = async() =>{
         try{
-            await axios.delete(`/course/${course._id}`,{
+            await axios.delete(`https://learnplus.herokuapp.com/api/course/${course._id}`,{
               data: { username: user.username },
           });
             window.location.replace("/teacher/addCourse");

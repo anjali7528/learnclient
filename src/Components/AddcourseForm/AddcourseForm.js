@@ -14,7 +14,7 @@ const AddcourseForm = () => {
 
   useEffect(() => {
     const fetchCourses = async ()=>{
-      const res = await axios.get("/course")
+      const res = await axios.get("https://learnplus.herokuapp.com/api/course")
       setCourses(res.data)
       console.log(res)
     }
@@ -30,7 +30,7 @@ const AddcourseForm = () => {
     }
     
     try{
-    const res = await axios.post("/course",newCourse);
+    const res = await axios.post("https://learnplus.herokuapp.com/api/course",newCourse);
     window.location.replace("/teacher/addCourse");
     console.log(res);
     }catch(err){

@@ -16,14 +16,14 @@ const Register = () => {
     try{
 
       if(window.location.pathname == "/register/student"){
-        const res = await axios.post('/auth/register/student',{
+        const res = await axios.post('https://learnplus.herokuapp.com/api/auth/register/student',{
           username,idnumber,email,password
         }) 
         res.data && window.location.replace("/login/student");
       };
 
       if(window.location.pathname == "/register/teacher" ){
-        const res = await axios.post('/auth/register/teacher',{
+        const res = await axios.post('https://learnplus.herokuapp.com/api/auth/register/teacher',{
           username,email,password
         });
         res.data && window.location.replace("/login/teacher");

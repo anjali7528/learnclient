@@ -12,7 +12,7 @@ const Result = () => {
     
     useEffect(() => {
         const fetchCourses = async ()=>{
-          const res = await axios.get("/result/allresult")
+          const res = await axios.get("https://learnplus.herokuapp.com/api/result/allresult")
           setAllresult([...res.data])
         }
         fetchCourses()

@@ -23,7 +23,7 @@ const QuizMake = () => {
                  }
            
               try{
-               const res = await axios.post("/quiz/makeQuiz",newQuestion);
+               const res = await axios.post("https://learnplus.herokuapp.com/api/quiz/makeQuiz",newQuestion);
                 console.log(res);
               }catch(err){
                 console.log(err)

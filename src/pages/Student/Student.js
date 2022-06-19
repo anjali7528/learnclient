@@ -7,7 +7,7 @@ const Student = () => {
 const [student,setStudent] = useState([])
     useEffect(() => {
         const fetchCourses = async ()=>{
-          const res = await axios.get("/student")
+          const res = await axios.get("https://learnplus.herokuapp.com/api/student")
           setStudent([...res.data])
         }
         fetchCourses()

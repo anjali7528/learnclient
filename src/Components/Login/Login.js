@@ -14,14 +14,14 @@ const Login = () => {
   try{
 
     if(window.location.pathname == "/login/student"){
-     const res = await axios.post("/auth/login/student",{
+     const res = await axios.post("https://learnplus.herokuapp.com/api/auth/login/student",{
        email: emailRef.current.value,
        password:passwordRef.current.value,
      })
      dispatch({type:"LOGIN_SUCCESS", payload: res.data});
     }
     if(window.location.pathname == "/login/teacher"){
-      const res = await axios.post("/auth/login/teacher",{
+      const res = await axios.post("https://learnplus.herokuapp.com/api/auth/login/teacher",{
         email: emailRef.current.value,
         password:passwordRef.current.value,
       })
