@@ -1,0 +1,22 @@
+*{
+    margin:0;
+ }
+ .home{
+     display: flex;
+     
+ }
+ .sidebarDiv{
+     flex:1;
+     width: 200px;
+     height:100%;
+ }
+ 
+ 
+ .boxes{
+ 
+      margin-left: 30%;
+     height: 100%;
+ }
+ h2{
+   text-align: center;
+ }

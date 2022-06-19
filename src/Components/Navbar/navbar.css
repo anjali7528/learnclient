@@ -1,0 +1,19 @@
+#navHeader{
+    width: 100vw !important;
+    position: absolute;
+    top: 0;
+    z-index: 10000 !important;
+}
+#navHead{
+    height: 84px;
+}
+
+@media only screen and (max-width: 992px){
+    #navHeader{
+        position: absolute;
+        z-index: 100;
+    }
+    #navHead{
+        height: 58px;
+    }
+}
